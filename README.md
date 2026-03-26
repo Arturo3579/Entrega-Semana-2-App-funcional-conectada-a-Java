@@ -27,7 +27,7 @@ Esta aplicación demuestra los fundamentos de React mediante tres componentes in
 
 ---
 
-##¿Qué partes cambian al interactuar?
+## ¿Qué partes cambian al interactuar?
 
 | Componente | Interacción | Cambio Visual |
 |------------|-------------|---------------|
@@ -40,6 +40,6 @@ Esta aplicación demuestra los fundamentos de React mediante tres componentes in
 | **Formulario** | Campos vacíos | No permite enviar |
 
 
-##¿Qué es el Estado en esta Aplicación?
+## ¿Qué es el Estado en esta Aplicación?
 
 El estado (`useState`) es la información que cambia mientras el usuario usa la aplicación. Cuando el estado cambia, react actualiza automáticamente la interfaz.
