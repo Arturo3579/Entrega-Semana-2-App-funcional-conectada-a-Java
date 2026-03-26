@@ -1,20 +1,45 @@
-<<<<<<< HEAD
-# React + Vite
+# Alvearium - Semana 2: Fundamentos de React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción del Proyecto
 
-Currently, two official plugins are available:
+Esta aplicación demuestra los fundamentos de React mediante tres componentes interactivos que manejan estado y eventos del usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Componentes de la Aplicación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. **Contador**
+- Muestra un valor numérico que puede aumentar o disminuir
+- Incluye dos botones: "Sumar +" y "Restar -"
+- Actualiza el valor en tiempo real
 
-## Expanding the ESLint configuration
+### 2. **Lista Editable**
+- Permite agregar nuevos items a una lista
+- Valida que no existan duplicados (insensible a mayúsculas/minúsculas)
+- Muestra mensaje de error si se intenta agregar un item repetido
+- Permite eliminar items individualmente
+- Incluye validación de campos vacíos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Entrega-Semana-2-App-funcional-conectada-a-Java
->>>>>>> f1ba549e25591fdecb9fbdd9f01a262b5958f4aa
+### 3. **Formulario de Contacto**
+- Captura nombre y email del usuario
+- Valida que ambos campos estén completos
+- Muestra mensaje de confirmación al enviar
+- Se limpia automáticamente después del envío
+
+---
+
+##¿Qué partes cambian al interactuar?
+
+| Componente | Interacción | Cambio Visual |
+|------------|-------------|---------------|
+| **Contador** | Click en "Sumar" | El número aumenta |
+| **Contador** | Click en "Restar" | El número disminuye |
+| **Lista** | Agregar item válido | Aparece nuevo elemento en la lista |
+| **Lista** | Item duplicado | Muestra mensaje de error en rojo |
+| **Lista** | Click en "Eliminar" | El item desaparece de la lista |
+| **Formulario** | Enviar datos válidos | Muestra mensaje de éxito verde |
+| **Formulario** | Campos vacíos | No permite enviar |
+
+
+##¿Qué es el Estado en esta Aplicación?
+
+El estado (`useState`) es la información que cambia mientras el usuario usa la aplicación. Cuando el estado cambia, react actualiza automáticamente la interfaz.
